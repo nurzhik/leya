@@ -1,3 +1,6 @@
+.main.second-page .header {
+    height: 112px;
+}    
 .content-compani-container{
 	margin-left:240px;
 	min-height:500px;
@@ -124,9 +127,16 @@
 	float:left;
 	width:190px;
 }
-.floor-part__right{
+.floor-part__right,.floor-part__plan{
 	margin-left:210px;
 	background-color:#fff;
+	display:none;
+}
+.floor-part__plan--active{
+	display:block;
+}
+.floor-part__right--active{
+	display:block;
 }
 .p-container{
 	background-color:#fff;
@@ -137,6 +147,7 @@
 	font-size:14px;
 	display:block;
 	margin-bottom:12px;
+	text-align:center;
 }
 .p-ul{
 	list-style:none;
@@ -148,6 +159,7 @@
 }
 .p-ul li img{
 	display:block;
+	margin: 0 auto;
 }
 .p-ul li span{
 	display:block;
@@ -158,12 +170,37 @@
 	margin-bottom:0;
 }
 .com-ul{
-	overflow:hidden;
+  position: relative;
+  margin-right: 16px;
+  margin-left: 14px;
+}
+.com-ul .slick-prev, .com-ul .slick-next{
+	font-size:0;
+	border:none;
+	background-color:transparent;
+	position:absolute;
+	top:7px;
+}
+.com-ul .slick-prev{
+	background-image:url(../img/left-arrow.svg);
+	width:18px;
+	height:18px;
+	background-size:cover;
+	left:-20px;
+}
+.com-ul .slick-next{
+	background-image:url(../img/right-arrow.svg);
+	width:18px;
+	height:18px;
+	background-size:cover;
+	right:-20px;
 }
 .com-item{
 	float:left;
 	margin-right:5px;
 	position:relative;
+	text-align: center;
+	outline:none;
 }
 .com-item__label{
 	font-size:25px;
@@ -173,7 +210,7 @@
 	opacity:0;
 }
 .big-plan{
-	padding:50px 10px;
+	padding-top:35px;
 }
 .big-plan > div img{
 	display:block;
@@ -182,6 +219,7 @@
 .bot-plan{
 	border-top:1px solid #ccc;
 	padding:20px 40px;
+	margin-top:20px;
 }
 .link{
   display: inline-block;
@@ -216,7 +254,43 @@
   background-color:#3e9553;	
   background-position: left 13px top 14px;
 }
-
+.slick-prev.hidden,
+.slick-next.hidden {
+    opacity: 0;
+    pointer-events:none;
+}
+.com-item__info{	
+	border-radius:50%;
+	width:30px;
+	height:30px;
+	line-height:30px;	
+	border:1px solid transparent;
+}
+.com-item__info:hover{
+	border:1px solid #ccc;
+	cursor:pointer;
+}
+.com-item__info--active{
+	border:1px solid #ccc;
+}	
+.p-photos{
+	display:none;
+}
+.p-photos--active{
+	display:block;
+}
+.plan-1,.plan-2{
+	display:none;
+}
+.plan-1--active,.plan-2--active{
+	display:block;
+}
+.plan-item{
+	& img{
+		margin:0 auto;
+		display:block;
+	}
+}
 
 
 /*табы*/
