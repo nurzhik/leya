@@ -3,14 +3,14 @@
 
 jQuery(document).ready(function ($) {
   
-  $('.slider-second').slick({
- accessibility: !1,
+  $('.storitelsto-news__slider').slick({
+ 			accessibility: !1,
             autoplay: !1,
             autoplaySpeed: 3e3,
             speed: 1e3,
             infinite: !0,
             arrows: !0,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding: 0,
             pauseOnHover: !1,
