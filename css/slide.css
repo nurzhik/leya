@@ -967,6 +967,9 @@ cursor: pointer;
 
 background-image: url(../img/right-slide-news-hover.png);
 }
+.storitelsto-news__slider.slick-initialized.slick-slider {
+    margin-bottom: 60px;
+}
 @media all and (max-width: 1204px) {
   .cover {
     height: 565px;
