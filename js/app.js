@@ -47,7 +47,13 @@ var demo = new StickyElement($('.header-fix'));
         prevArrow: '<span class="slider-prev slider-nav" aria-label="previous"></span>',
         nextArrow: '<span class="slider-next slider-nav" aria-label="next"></span>',
         });      
-
+  $('.slider-plan').slick({
+ 		infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  arrows:false,
+  dots:true,
+        }); 
 $(document).ready(function() {
 	$(".fancybox").fancybox({
 		openEffect	: 'none',
