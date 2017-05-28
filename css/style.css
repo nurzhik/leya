@@ -2902,7 +2902,7 @@ a.ui-button:active .var-link:before,
 .date-news {
   position: absolute;
   top: 0;
-  right: -85px;
+  right: -77px;
   font-size: 12px;
   width: 38px;
   height: 38px;
@@ -2938,7 +2938,7 @@ a.ui-button:active .var-link:before,
   vertical-align: middle;
 }
 .news-list li:nth-child(2n) .date-news {
-  left: -85px;
+  left: -78px;
   right: auto;
 }
 @media screen and (max-height: 800px) {
