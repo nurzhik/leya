@@ -32,6 +32,9 @@ jQuery(document).ready(function ($) {
 };
 
 var demo = new StickyElement($('.header-fix'));
+
+
+
   $('.storitelsto-news__slider').slick({
  			accessibility: !1,
             autoplay: !1,
@@ -48,12 +51,21 @@ var demo = new StickyElement($('.header-fix'));
         nextArrow: '<span class="slider-next slider-nav" aria-label="next"></span>',
         });      
   $('.slider-plan').slick({
- 		infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  arrows:false,
-  dots:true,
+ 			infinite: false,
+		  slidesToShow: 3,
+		  slidesToScroll: 3,
+		  arrows:false,
+		  dots:true,
         }); 
+
+
+  $('.remove-plan').on('click', function() {
+
+ 	 $('.slider-plan').slick('slickRemove', $(this).parent('.slider-plan-item').index() );
+
+});
+
+
 $(document).ready(function() {
 	$(".fancybox").fancybox({
 		openEffect	: 'none',
