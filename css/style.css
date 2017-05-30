@@ -1117,7 +1117,6 @@ table tr:nth-child(odd) td {
 }
 .rukovodstvo-list li {
   padding-bottom: 40px;
-  border-bottom: 1px solid #d1d1d1;
   margin-bottom: 40px;
 }
 #map {
@@ -1128,13 +1127,15 @@ table tr:nth-child(odd) td {
 }
 .rukovodstvo-item {
   overflow: hidden;
+  background-color: #fff;
+  padding: 40px;
 }
 .rukovodstvo-item__img {
   width: 290px;
   float: left;
 }
 .rukovodstvo-item__content {
-  margin-left: 380px;
+  margin-left: 340px;
 }
 .rukovodstvo-item__content p {
   font-size: 16px;
@@ -3011,6 +3012,43 @@ a.ui-button:active .var-link:before,
   top: -15px;
   background-image: url(../img/delete-plan.png);
   right: 10px;
+}
+.contact-list-item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  margin-right: -32px;
+  margin-bottom: 40px;
+}
+.contact-list-item li {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.3%;
+}
+.contact-list {
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  width: 100%;
+  margin-bottom: 7px;
+}
+.contact-item__title {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.contact-item {
+  margin-right: 32px;
+  font-size: 16px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+.content-contact {
+  padding: 40px 35px 45px;
 }
 @media screen and (max-height: 800px) {
   .card-item {
